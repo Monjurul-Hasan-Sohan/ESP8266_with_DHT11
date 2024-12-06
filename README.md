@@ -1,4 +1,3 @@
-```
 # Temperature and Humidity Monitoring Project
 
 This project uses an ESP8266 NodeMCU and a DHT11 sensor to collect temperature and humidity data. The data is then sent via HTTP POST requests to a server hosted locally, where it is stored in a MySQL database. This can be useful for remote monitoring of environmental conditions.
@@ -38,7 +37,6 @@ CREATE TABLE dht11 (
     humidity FLOAT NOT NULL,
     timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-```
 
 ## PHP Script
 A PHP script (`text_data.php`) is used to accept the incoming HTTP POST request from the ESP8266 and insert the data into the MySQL database.
